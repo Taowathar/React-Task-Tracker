@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [showAddTask, setShowAddtask] = useState(false);
@@ -92,6 +93,7 @@ const App = () => {
       ) : (
         "No Tasks"
       )}
+      <Footer />
     </div>
   );
 };
